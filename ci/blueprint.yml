@@ -1,0 +1,13 @@
+project:
+  name: payment-api
+  language: python
+  build_type: poetry
+  deployment: terraform
+  environments: [dev, staging, prod]
+  branching_strategy: trunk
+  versioning: semver
+  features:
+    lint: true
+    test: true
+    security_scan: true
+    coverage: true
