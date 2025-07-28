@@ -1,0 +1,4 @@
+quality_gate:
+  coverage_threshold: 85
+  lint_error_threshold: 0
+  block_on_vulns: true
