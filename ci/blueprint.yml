@@ -1,7 +1,7 @@
 project:
-  name: payment-api
-  language: python
-  build_type: poetry
+  name: billing-app
+  language: java
+  build_type: maven
   deployment: terraform
   environments: [dev, staging, prod]
   branching_strategy: trunk
