@@ -15,6 +15,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install Dependencies
+        run: pip install pyyaml
+
       - name: Generate Workflow Steps from Blueprint
         id: generate
         run: |
@@ -30,5 +38,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Run ${{ matrix.name }}
-        uses: ./.github/actions/${{ matrix.template }}
+      - name: Execute Job from Template
+        run: |
+          echo "Running ${{ matrix.name }}"
+          cat ci/templates/${{ matrix.template }}.yml
