@@ -1,6 +1,6 @@
 versioning:
   strategy: semver
   branches:
-    dev: '^dev-.*'
-    staging: '^release-.*'
+    dev: '^dev.*'
+    staging: '^staging.*'
     main: '^main$'
