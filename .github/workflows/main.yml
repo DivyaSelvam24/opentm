@@ -40,5 +40,6 @@ jobs:
 
       - name: Execute Job from Template
         run: |
-          echo "Running ${{ matrix.name }}"
+          echo "Running ${{ matrix.name }} from ci/templates/${{ matrix.template }}.yml"
           cat ci/templates/${{ matrix.template }}.yml
+      
