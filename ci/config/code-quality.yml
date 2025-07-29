@@ -1,4 +1,4 @@
-quality_gate:
+quality:
   coverage_threshold: 85
   lint_error_threshold: 0
-  block_on_vulns: true
+  block_on_vulnerabilities: true
